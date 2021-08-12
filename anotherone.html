@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Headers - 1</title>
+    <style>
+        .tokyo_tm_home{
+            width: 100%;
+            min-height: 100vh;
+            clear: both;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .tokyo_tm_home .home_content{
+            display: flex;
+            align-items: center;
+        }
+
+        .tokyo_tm_home .details{
+            margin-left: 80px;
+        }
+        .tokyo_tm_home .details .name{
+            font-size: 55px;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+        .tokyo_tm_home .details .job{
+            font-family: "Montserrat";
+            font-style: italic;
+            font-weight: 500;
+            max-width: 450px;
+            margin-bottom: 30px;
+        }
+        .responsive {
+        max-width: 100%;
+        height: auto;
+        }
+
+        .tokyo_tm_home .avatar{
+	min-width: 300px;
+	min-height: 300px;
+	position: relative;
+	border-radius: 100%;
+    }
+    .tokyo_tm_home .avatar .image{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+    </style>
+  </head>
+  <body>
+
+    <div class="tokyo_tm_home">
+        <div class="home_content">
+            <div class="avatar">
+                <div class="image" data-img-url="img/slider/1.jpg">
+                    <img src="circle-cropped.png" alt="Nature" class="responsive" width="600" height="400">
+                </div>
+            </div>
+            <div class="details">
+                <h3 class="name">Eduarda <span>Vieira</span></h3>
+                <p class="job">I'm a (soon to be) Biomedical Engineer with a Masters in Medical Informatics.</p>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

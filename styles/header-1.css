@@ -1,0 +1,186 @@
+/* 
+** The Header Media Queries **
+** Tweak as per your needs **
+*/
+
+a:link {
+  color: #FFFFFF;
+}
+
+/* visited link */
+a:visited {
+  color: #FFFFFF;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FFFFFF;
+}
+
+/* selected link */
+a:active {
+  color: #FFFFFF;
+}
+
+
+.brand {
+  font-weight: bold;
+  font-size: 20px; }
+
+.site-header {
+  position: relative;
+  background-color: #000000; }
+
+.site-header__wrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  @media (min-width: 600px) {
+    .site-header__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0;
+      padding-bottom: 0; } }
+@media (min-width: 600px) {
+  .nav__wrapper {
+    display: flex; } }
+
+@media (max-width: 599px) {
+  .nav__wrapper {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #3b3b3b;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
+    .nav__wrapper.active {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0); } }
+
+.nav__item a {
+  display: block;
+  padding: 1.5rem 1rem; }
+
+.nav__toggle {
+  display: none; }
+  @media (max-width: 599px) {
+    .nav__toggle {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+    } 
+}
+
+.home {
+  position: absolute; 
+  background-color: #222121;
+  font-family: "Mulish";
+	font-size: 30px;
+	color: #767676;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.centered {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.responsive {
+  width: 100%;
+  max-width: 600px;
+  height: max-content;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+.tokyo_tm_home{
+  width: 100%;
+  min-height: 100vh;
+  clear: both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.tokyo_tm_home .home_content{
+  display: flex;
+  align-items: center;
+}
+
+.tokyo_tm_home .details{
+  margin-left: 80px;
+}
+.tokyo_tm_home .details .name{
+  font-size: 55px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.tokyo_tm_home .details .job{
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  max-width: 450px;
+  margin-bottom: 30px;
+}
+.responsive {
+max-width: 100%;
+height: auto;
+}
+
+.tokyo_tm_home .avatar{
+min-width: 300px;
+min-height: 300px;
+position: relative;
+border-radius: 100%;
+}
+.tokyo_tm_home .avatar .image{
+position: absolute;
+top: 0px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+}
+
+.centeredkinda2 {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
